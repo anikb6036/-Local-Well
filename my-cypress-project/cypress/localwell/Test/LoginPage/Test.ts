@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 import LoginPageLocatore from "../../Locator/LoginPage.cy";
 
 
