@@ -18,11 +18,16 @@ before(() => {
         loginPageLocatore.getPhoneNumberField().type(phone);
         cy.wait(3000);
         cy.contains('Submit to Login').click();
-        loginPageLocatore.getOTPField().type('0000000');
-        
-
+        loginPageLocatore.getOTPField().type('0000000'); 
+        cy.wait(3000);
+        loginPageLocatore.getOwnerNameField().type('Test Owner');
+        loginPageLocatore.getEmailField().type('testowner@example.com');
+        loginPageLocatore.getBusinessNameField().type('Test Business');
+        loginPageLocatore.getPinCodeField().type('743287');
+        cy.contains('Register Now').click();
 
     });
+
 });
 
 
